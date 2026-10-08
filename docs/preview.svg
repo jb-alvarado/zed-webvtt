@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="462" viewBox="0 0 1040 462" role="img" aria-labelledby="title desc">
+<title id="title">Illustrative WebVTT syntax highlighting</title>
+<desc id="desc">A WebVTT sample with CSS styles, colored region settings, cue settings, and a green speaker name. Colors are illustrative and depend on the editor theme.</desc>
+<rect width="1040" height="462" rx="12" fill="#1e2430"/>
+<text x="24" y="32" fill="#94a3b8" font-family="monospace" font-size="14">demo.vtt · illustrative preview</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="17">
+<text x="24" y="72" fill="#64748b" font-size="14"> 1</text>
+<text x="64" y="72" xml:space="preserve"><tspan fill="#c792ea">WEBVTT</tspan></text>
+<text x="24" y="98" fill="#64748b" font-size="14"> 2</text>
+<text x="64" y="98" xml:space="preserve"></text>
+<text x="24" y="124" fill="#64748b" font-size="14"> 3</text>
+<text x="64" y="124" xml:space="preserve"><tspan fill="#c792ea">STYLE</tspan></text>
+<text x="24" y="150" fill="#64748b" font-size="14"> 4</text>
+<text x="64" y="150" xml:space="preserve"><tspan fill="#f07178">::cue</tspan><tspan fill="#e2e8f0"> {</tspan></text>
+<text x="24" y="176" fill="#64748b" font-size="14"> 5</text>
+<text x="64" y="176" xml:space="preserve"><tspan fill="#82aaff">  color</tspan><tspan fill="#e2e8f0">: </tspan><tspan fill="#c3e88d">lime</tspan><tspan fill="#e2e8f0">;</tspan></text>
+<text x="24" y="202" fill="#64748b" font-size="14"> 6</text>
+<text x="64" y="202" xml:space="preserve"><tspan fill="#e2e8f0">}</tspan></text>
+<text x="24" y="228" fill="#64748b" font-size="14"> 7</text>
+<text x="64" y="228" xml:space="preserve"></text>
+<text x="24" y="254" fill="#64748b" font-size="14"> 8</text>
+<text x="64" y="254" xml:space="preserve"><tspan fill="#c792ea">REGION</tspan></text>
+<text x="24" y="280" fill="#64748b" font-size="14"> 9</text>
+<text x="64" y="280" xml:space="preserve"><tspan fill="#82aaff">id</tspan><tspan fill="#e2e8f0">:</tspan><tspan fill="#c3e88d">top</tspan></text>
+<text x="24" y="306" fill="#64748b" font-size="14">10</text>
+<text x="64" y="306" xml:space="preserve"><tspan fill="#82aaff">width</tspan><tspan fill="#e2e8f0">:</tspan><tspan fill="#f78c6c">40%</tspan></text>
+<text x="24" y="332" fill="#64748b" font-size="14">11</text>
+<text x="64" y="332" xml:space="preserve"><tspan fill="#82aaff">regionanchor</tspan><tspan fill="#e2e8f0">:</tspan><tspan fill="#f78c6c">50%,0%</tspan></text>
+<text x="24" y="358" fill="#64748b" font-size="14">12</text>
+<text x="64" y="358" xml:space="preserve"></text>
+<text x="24" y="384" fill="#64748b" font-size="14">13</text>
+<text x="64" y="384" xml:space="preserve"><tspan fill="#f78c6c">00:00:01.000</tspan><tspan fill="#e2e8f0"> --&gt; </tspan><tspan fill="#f78c6c">00:00:04.000</tspan><tspan fill="#82aaff"> align</tspan><tspan fill="#e2e8f0">:</tspan><tspan fill="#c3e88d">start</tspan><tspan fill="#82aaff"> size</tspan><tspan fill="#e2e8f0">:</tspan><tspan fill="#f78c6c">70%</tspan></text>
+<text x="24" y="410" fill="#64748b" font-size="14">14</text>
+<text x="64" y="410" xml:space="preserve"><tspan fill="#e2e8f0">&lt;</tspan><tspan fill="#f07178">v</tspan><tspan fill="#c3e88d"> Alice</tspan><tspan fill="#e2e8f0">&gt;</tspan><tspan fill="#e2e8f0">Hello </tspan><tspan fill="#f07178">&lt;b&gt;</tspan><tspan fill="#e2e8f0">world</tspan><tspan fill="#f07178">&lt;/b&gt;</tspan><tspan fill="#f07178">&lt;/v&gt;</tspan></text>
+</g>
+</svg>

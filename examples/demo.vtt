@@ -1,0 +1,27 @@
+WEBVTT Demo subtitles
+
+NOTE This whole block should look like a comment
+Generated for testing the Zed WebVTT extension.
+
+STYLE
+::cue {
+  color: lime;
+}
+
+REGION
+id:top
+width:40%
+lines:3
+regionanchor:50%,0%
+viewportanchor:50%,10%
+scroll:up
+
+intro
+00:00:01.000 --> 00:00:04.000 align:start position:10%
+<v Alice>Hello <b>world</b> &amp; welcome.</v>
+
+00:00:05.500 --> 00:00:09.000 line:90% size:70%
+<v Bob><i>This is a second cue.</i></v>
+
+00:00:10.000 --> 00:00:13.250
+A normal subtitle without a voice tag.

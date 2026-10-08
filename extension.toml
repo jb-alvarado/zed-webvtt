@@ -1,0 +1,12 @@
+id = "webvtt"
+name = "WebVTT"
+description = "Syntax highlighting for WebVTT subtitle files."
+version = "0.1.0"
+schema_version = 1
+authors = ["jb-alvarado"]
+repository = "https://github.com/jb-alvarado/zed-webvtt"
+
+[grammars.webvtt]
+repository = "https://github.com/jb-alvarado/zed-webvtt.git"
+rev = "60e21c9630113441efc13fa9d57695f7d790537c"
+path = "tree-sitter-webvtt"

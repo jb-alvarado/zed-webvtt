@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: tree-sitter-webvtt/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned Tree-sitter CLI
+        working-directory: tree-sitter-webvtt
+        run: npm ci
+      - name: Regenerate parser
+        working-directory: tree-sitter-webvtt
+        run: npm run generate
+      - name: Check generated sources are committed
+        run: git diff --exit-code -- tree-sitter-webvtt/src
+      - name: Check parser, highlighting, and dev setup
+        run: python scripts/check.py

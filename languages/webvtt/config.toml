@@ -1,0 +1,6 @@
+name = "WebVTT"
+grammar = "webvtt"
+path_suffixes = ["vtt"]
+first_line_pattern = "^WEBVTT(?:[ \\t].*)?$"
+tab_size = 2
+hard_tabs = false
