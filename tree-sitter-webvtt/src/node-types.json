@@ -1,0 +1,525 @@
+[
+  {
+    "type": "comment_header",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "comment_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "comment_text",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comment_text",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "cue",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "cue_identifier_line",
+          "named": true
+        },
+        {
+          "type": "cue_text_line",
+          "named": true
+        },
+        {
+          "type": "timing_line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cue_identifier_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "cue_identifier",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cue_setting",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "setting_name",
+          "named": true
+        },
+        {
+          "type": "setting_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cue_settings",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "cue_setting",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cue_text_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "cue_text",
+          "named": true
+        },
+        {
+          "type": "cue_text_symbol",
+          "named": true
+        },
+        {
+          "type": "end_tag",
+          "named": true
+        },
+        {
+          "type": "entity",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        },
+        {
+          "type": "start_tag",
+          "named": true
+        },
+        {
+          "type": "timestamp_tag",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "document",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "blank_line",
+          "named": true
+        },
+        {
+          "type": "bom",
+          "named": true
+        },
+        {
+          "type": "cue",
+          "named": true
+        },
+        {
+          "type": "header",
+          "named": true
+        },
+        {
+          "type": "note_block",
+          "named": true
+        },
+        {
+          "type": "region_block",
+          "named": true
+        },
+        {
+          "type": "style_block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "end_tag",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "tag_close_open",
+          "named": true
+        },
+        {
+          "type": "tag_end",
+          "named": true
+        },
+        {
+          "type": "tag_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "header_magic",
+          "named": true
+        },
+        {
+          "type": "header_text",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header_text",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "note_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "comment_header",
+          "named": true
+        },
+        {
+          "type": "comment_line",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        },
+        {
+          "type": "note_keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "region_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "newline",
+          "named": true
+        },
+        {
+          "type": "region_keyword",
+          "named": true
+        },
+        {
+          "type": "region_line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "region_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "newline",
+          "named": true
+        },
+        {
+          "type": "region_setting_name",
+          "named": true
+        },
+        {
+          "type": "region_setting_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "region_setting_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "setting_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "start_tag",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "tag_annotation",
+          "named": true
+        },
+        {
+          "type": "tag_end",
+          "named": true
+        },
+        {
+          "type": "tag_name",
+          "named": true
+        },
+        {
+          "type": "tag_open",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "style_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "newline",
+          "named": true
+        },
+        {
+          "type": "style_content",
+          "named": true
+        },
+        {
+          "type": "style_keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "timestamp_tag",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "tag_end",
+          "named": true
+        },
+        {
+          "type": "tag_open",
+          "named": true
+        },
+        {
+          "type": "timestamp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "timing_line",
+    "named": true,
+    "fields": {
+      "end": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "timestamp",
+            "named": true
+          }
+        ]
+      },
+      "start": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "timestamp",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "cue_settings",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        },
+        {
+          "type": "timing_arrow",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "blank_line",
+    "named": true
+  },
+  {
+    "type": "bom",
+    "named": true
+  },
+  {
+    "type": "cue_identifier",
+    "named": true
+  },
+  {
+    "type": "cue_text",
+    "named": true
+  },
+  {
+    "type": "cue_text_symbol",
+    "named": true
+  },
+  {
+    "type": "entity",
+    "named": true
+  },
+  {
+    "type": "header_magic",
+    "named": true
+  },
+  {
+    "type": "newline",
+    "named": true
+  },
+  {
+    "type": "note_keyword",
+    "named": true
+  },
+  {
+    "type": "region_keyword",
+    "named": true
+  },
+  {
+    "type": "region_setting_value",
+    "named": true
+  },
+  {
+    "type": "setting_value",
+    "named": true
+  },
+  {
+    "type": "style_content",
+    "named": true
+  },
+  {
+    "type": "style_keyword",
+    "named": true
+  },
+  {
+    "type": "tag_annotation",
+    "named": true
+  },
+  {
+    "type": "tag_close_open",
+    "named": true
+  },
+  {
+    "type": "tag_end",
+    "named": true
+  },
+  {
+    "type": "tag_name",
+    "named": true
+  },
+  {
+    "type": "tag_open",
+    "named": true
+  },
+  {
+    "type": "timestamp",
+    "named": true
+  },
+  {
+    "type": "timing_arrow",
+    "named": true
+  }
+]

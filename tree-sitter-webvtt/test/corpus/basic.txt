@@ -1,0 +1,135 @@
+==================
+Header and cue
+==================
+WEBVTT
+
+00:00:01.000 --> 00:00:04.000
+Hello world!
+
+---
+
+(document
+  (header
+    (header_magic)
+    (newline))
+  (blank_line)
+  (cue
+    (timing_line
+      start: (timestamp)
+      (timing_arrow)
+      end: (timestamp)
+      (newline))
+    (cue_text_line
+      (cue_text)
+      (newline))))
+
+==================
+Multiple text lines stay in one cue
+==================
+WEBVTT
+
+00:00:01.000 --> 00:00:04.000
+Hello <b>world</b>
+Second &amp; last line.
+
+---
+
+(document
+  (header (header_magic) (newline))
+  (blank_line)
+  (cue
+    (timing_line
+      start: (timestamp)
+      (timing_arrow)
+      end: (timestamp)
+      (newline))
+    (cue_text_line
+      (cue_text)
+      (start_tag (tag_open) (tag_name) (tag_end))
+      (cue_text)
+      (end_tag (tag_close_open) (tag_name) (tag_end))
+      (newline))
+    (cue_text_line
+      (cue_text)
+      (entity)
+      (cue_text)
+      (newline))))
+
+==================
+Tagged text without a final newline
+==================
+WEBVTT
+
+00:00:01.000 --> 00:00:04.000
+Hello <b>world</b>
+---
+
+(document
+  (header (header_magic) (newline))
+  (blank_line)
+  (cue
+    (timing_line
+      start: (timestamp)
+      (timing_arrow)
+      end: (timestamp)
+      (newline))
+    (cue_text_line
+      (cue_text)
+      (start_tag (tag_open) (tag_name) (tag_end))
+      (cue_text)
+      (end_tag (tag_close_open) (tag_name) (tag_end)))))
+
+==================
+Identifier, settings and tags
+==================
+WEBVTT
+
+intro
+00:00:05.000 --> 00:00:08.000 align:start position:10%
+<v Alice>Hello <b>world</b>.</v>
+
+---
+
+(document
+  (header
+    (header_magic)
+    (newline))
+  (blank_line)
+  (cue
+    (cue_identifier_line
+      (cue_identifier)
+      (newline))
+    (timing_line
+      start: (timestamp)
+      (timing_arrow)
+      end: (timestamp)
+      (cue_settings
+        (cue_setting
+          (setting_name)
+          (setting_value))
+        (cue_setting
+          (setting_name)
+          (setting_value)))
+      (newline))
+    (cue_text_line
+      (start_tag
+        (tag_open)
+        (tag_name)
+        (tag_annotation)
+        (tag_end))
+      (cue_text)
+      (start_tag
+        (tag_open)
+        (tag_name)
+        (tag_end))
+      (cue_text)
+      (end_tag
+        (tag_close_open)
+        (tag_name)
+        (tag_end))
+      (cue_text)
+      (end_tag
+        (tag_close_open)
+        (tag_name)
+        (tag_end))
+      (newline))))

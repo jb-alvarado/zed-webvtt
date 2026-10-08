@@ -1,0 +1,68 @@
+==================
+CSS content and region settings end at blank lines
+==================
+WEBVTT
+
+STYLE
+::cue {
+  color: lime;
+}
+
+REGION
+id:top
+width:40%
+lines:3
+regionanchor:50%,0%
+viewportanchor:50.5%, 10%
+scroll:up
+
+00:00:01.000 --> 00:00:04.000
+Hello!
+
+---
+
+(document
+  (header (header_magic) (newline))
+  (blank_line)
+  (style_block
+    (style_keyword)
+    (newline)
+    (style_content)
+    (newline))
+  (blank_line)
+  (region_block
+    (region_keyword)
+    (newline)
+    (region_line (region_setting_name) (region_setting_value) (newline))
+    (region_line (region_setting_name) (region_setting_value) (newline))
+    (region_line (region_setting_name) (region_setting_value) (newline))
+    (region_line (region_setting_name) (region_setting_value) (newline))
+    (region_line (region_setting_name) (region_setting_value) (newline))
+    (region_line (region_setting_name) (region_setting_value) (newline)))
+  (blank_line)
+  (cue
+    (timing_line
+      start: (timestamp)
+      (timing_arrow)
+      end: (timestamp)
+      (newline))
+    (cue_text_line (cue_text) (newline))))
+
+==================
+Region settings with whitespace and no final newline
+==================
+WEBVTT
+
+REGION
+  width: 40%
+scroll: up
+---
+
+(document
+  (header (header_magic) (newline))
+  (blank_line)
+  (region_block
+    (region_keyword)
+    (newline)
+    (region_line (region_setting_name) (region_setting_value) (newline))
+    (region_line (region_setting_name) (region_setting_value))))

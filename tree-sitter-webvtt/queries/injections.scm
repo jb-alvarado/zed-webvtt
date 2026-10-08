@@ -1,0 +1,2 @@
+((style_content) @injection.content
+ (#set! injection.language "css"))
